@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vivian Games Store</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="icon" href="./logo-footer.png" type="image/png">
+    <script type="text/javascript" src="../functions.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="wrapper header-wrapper">
+            <div class="nav">
+                <img style="cursor: pointer" src="./logo.png" alt="logo" onclick="goHomePage()">
+                <div class="nav-list">
+                    <p class="nav-item" id="homepage" onclick="goHomePage()">Home</p>
+                    <p class="nav-item" id="storepage" onclick="goStorePage()">Store</p>
+                    <p class="nav-item" id="newpage" onclick="goNewPage()">New</p>
+                    <p class="nav-item" id="supportpage" onclick="goSupportPage()">Support</p>
+                </div>
+            </div>
+            <div class="icon-header">
+                <div class="icon-user">
+                    <img style="cursor: pointer" src="./cart.svg" alt="cart">
+                    <img style="cursor: pointer" src="./user-icon.svg" alt="user">
+                </div>
+                <div class="icon-language">
+                    <img style="margin-right: 4px" src="./eng.svg" alt="eng">
+                    <p style="color: white">EN</p>
+                    <img src="./drop-down.svg" alt="drop-down">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner">
+        <div class="wrapper banner-wrapper">
+            <div class="banner-text">
+                <div class="banner-text__name">VIVIAN GAME STORE</div>
+                <div class="banner-text__desc">Game world for women.</div>
+            </div>
+            <div class="banner-image">
+                <img src="./banner-image.png" alt="banner-image">
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="body1">
+            <div class="search">
+                Search game...
+            </div>
+            <div class="text-category">
+                <div class="category">CATEGORIES</div>
+                <div class="category">NEW RELEASE</div>
+            </div>
+
+            <div class="wrapper-body1">
+                <div class="body-text">
+                    <div class="body-text__block">
+                        <div class="body-text__blockHeader">GENRES</div>
+                        <div class="body-text__blockItem">Adventure</div>
+                        <div class="body-text__blockItem">Casual</div>
+                        <div class="body-text__blockItem">Storytelling</div>
+                        <div class="body-text__blockItem">Puzzle</div>
+                    </div>
+
+                    <div class="body-text__block">
+                        <div class="body-text__blockHeader">PLAYING TYPES</div>
+                        <div class="body-text__blockItem">MOBA</div>
+                        <div class="body-text__blockItem">MMO RPG</div>
+                        <div class="body-text__blockItem">CO-OP</div>
+                    </div>
+                </div>
+                <div class="wrapper-body__banner">
+                    <img src="./arrow-left.svg" alt="arrow-left" class="arrow">
+                    <div class="body1-group">
+                        <div class="body-banner_background">
+                            <div class="body-banner__info">
+                                <div class="wrapper-body__info">
+                                    <div class="play">PLAY TOGETHER</div>
+
+                                    <div class="category-block">
+                                        <div class="header-category">Category:</div>
+                                        <div class="detail-category">
+                                            <span style="text-decoration: underline;">Adventure</span><span> /
+                                            </span><span style="text-decoration: underline;">MMO RPG</span>
+                                        </div>
+
+                                        <div class="detail-category__desc"><span class="header-category">Description:
+                                            </span>A
+                                            game that help players throughout the world can
+                                            connect
+                                            and play together.
+                                        </div>
+                                        <div class="btn-seemore" id="seemore" onclick="goDetailPage()">See more</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="list-bodyBanner">
+                            <div class="list-bodyBanner__item1"></div>
+                            <div class="list-bodyBanner__item2">
+                                <div class="item-filter"></div>
+                            </div>
+                            <div class="list-bodyBanner__item3">
+                                <div class="item-filter"></div>
+                            </div>
+                            <div class="list-bodyBanner__itemText">
+                                <p class="text-inside">...</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./arrow-right.svg" alt="arrow-right" class="arrow">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="body2">
+        <div class="container">
+            <div class="onsale">
+                ON SALE
+            </div>
+
+            <div class="list-item-onsale">
+                <div class="onsale-item__block">
+                    <img class="onsale-item__image" src="./body-image3.png" alt="" style="cursor: pointer;">
+                    <div class="onsale-item__name">Revelation 2.0: The Lost Hero</div>
+                    <div class="onsale-item__detail">
+                        <div class="onsale-item__detail__block">
+                            <div class="onsale-item__listCate">
+                                <div class="onsale-item__cate">Adventure</div>
+                                <div class="onsale-item__cate">MMO RPG</div>
+                            </div>
+                            <div class="onsale-item__listPrice">
+                                <div class="onsale-item__price" style="text-decoration: line-through; opacity: 0.5;">$
+                                    50</div>
+                                <div class="onsale-item__price">$ 25</div>
+                            </div>
+                        </div>
+
+                        <div class="onsale-item__discount">-50%</div>
+                    </div>
+                </div>
+                <div class="onsale-item__block">
+                    <img class="onsale-item__image" src="./body-image2.png" alt="" style="cursor: pointer;">
+                    <div class="onsale-item__name">The Fashion Star</div>
+                    <div class="onsale-item__detail">
+                        <div class="onsale-item__detail__block">
+                            <div class="onsale-item__listCate">
+                                <div class="onsale-item__cate">Adventure</div>
+                                <div class="onsale-item__cate">MMO RPG</div>
+                            </div>
+                            <div class="onsale-item__listPrice">
+                                <div class="onsale-item__price" style="text-decoration: line-through; opacity: 0.5;">$
+                                    50</div>
+                                <div class="onsale-item__price">$ 25</div>
+                            </div>
+                        </div>
+
+                        <div class="onsale-item__discount">-50%</div>
+                    </div>
+                </div>
+                <div class="onsale-item__block">
+                    <img class="onsale-item__image" src="./body-image4.png" alt="" style="cursor: pointer;">
+                    <div class="onsale-item__name">The New Emperor</div>
+                    <div class="onsale-item__detail">
+                        <div class="onsale-item__detail__block">
+                            <div class="onsale-item__listCate">
+                                <div class="onsale-item__cate">Adventure</div>
+                                <div class="onsale-item__cate">MMO RPG</div>
+                            </div>
+                            <div class="onsale-item__listPrice">
+                                <div class="onsale-item__price" style="text-decoration: line-through; opacity: 0.5;">$
+                                    50</div>
+                                <div class="onsale-item__price">$ 25</div>
+                            </div>
+                        </div>
+
+                        <div class="onsale-item__discount">-50%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow-group">
+                <img src="./arrow-left.svg" alt="arrow-left" style="cursor: pointer;">
+                <img src="./arrow-right.svg" alt="arrow-right" style="cursor: pointer;">
+            </div>
+        </div>
+    </div>
+
+    <div class="body3">
+        <div class="container">
+            <div class="pre-ordered">
+                PRE-ORDERED
+            </div>
+
+            <div class="list-item-onsale">
+                <div class="onsale-item__block">
+                    <img class="onsale-item__image" src="./body-image5.png" alt="" style="cursor: pointer;">
+                    <div class="onsale-item__name">Revelation 2.0: The Lost Hero</div>
+                    <div class="onsale-item__detail">
+                        <div class="onsale-item__detail__block">
+                            <div class="onsale-item__listCate">
+                                <div class="onsale-item__cate">Adventure</div>
+                                <div class="onsale-item__cate">MMO RPG</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-preorder">Pre-order</div>
+                </div>
+                <div class="onsale-item__block">
+                    <img class="onsale-item__image" src="./body-image6.png" alt="" style="cursor: pointer;">
+                    <div class="onsale-item__name">The Fashion Star</div>
+                    <div class="onsale-item__detail">
+                        <div class="onsale-item__detail__block">
+                            <div class="onsale-item__listCate">
+                                <div class="onsale-item__cate">Adventure</div>
+                                <div class="onsale-item__cate">MMO RPG</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-preorder">Pre-order</div>
+                </div>
+                <div class="onsale-item__block">
+                    <img class="onsale-item__image" src="./body-image7.png" alt="" style="cursor: pointer;">
+                    <div class="onsale-item__name">The New Emperor</div>
+                    <div class="onsale-item__detail">
+                        <div class="onsale-item__detail__block">
+                            <div class="onsale-item__listCate">
+                                <div class="onsale-item__cate">Adventure</div>
+                                <div class="onsale-item__cate">MMO RPG</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="btn-preorder">Pre-order</div>
+                </div>
+            </div>
+            <div class="arrow-group">
+                <img src="./arrow-left.svg" alt="arrow-left" style="cursor: pointer;">
+                <img src="./arrow-right.svg" alt="arrow-right" style="cursor: pointer;">
+            </div>
+        </div>
+    </div>
+
+    <!-- body 4 -->
+    <div class="body4">
+        <div class="container">
+            <div class="rankings">
+                RANKINGS
+            </div>
+
+            <div class="ranking-table">
+                <div class="rank-block">
+                    <div class="list-rank__name">BEST SELLER</div>
+                    <div class="list-rank__nameBorder"></div>
+
+                    <div class="padding-add"></div>
+
+                    <div class="rank-item">
+                        <img src="./rank1-icon.svg" alt="rank1-icon" class="rank-icon">
+                        <div class="rank-item__block">
+                            <img src="./rank-item1.png" alt="" class="rank-item__image">
+                            <div class="rank-item__detail">
+                                <div class="rank-item__name">Revelation 2.0: The Lost Hero</div>
+                                <div class="onsale-item__listCate">
+                                    <div class="onsale-item__cate">Adventure</div>
+                                    <div class="onsale-item__cate">MMO RPG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item">
+                        <img src="./rank2-icon.svg" alt="rank2-icon" class="rank-icon">
+                        <div class="rank-item__block">
+                            <img src="./rank-item3.png" alt="" class="rank-item__image">
+                            <div class="rank-item__detail">
+                                <div class="rank-item__name">Ghost Stories: Untold</div>
+                                <div class="onsale-item__listCate">
+                                    <div class="onsale-item__cate">Storytelling</div>
+                                    <div class="onsale-item__cate">MMO RPG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item">
+                        <img src="./rank3-icon.svg" alt="rank3-icon" class="rank-icon">
+                        <div class="rank-item__block">
+                            <img src="./rank-item5.png" alt="" class="rank-item__image">
+                            <div class="rank-item__detail">
+                                <div class="rank-item__name">Draw The Love Stories</div>
+                                <div class="onsale-item__listCate">
+                                    <div class="onsale-item__cate">Casual</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item">
+                        <div class="rank-icon"></div>
+                        <div class="rank-item__blockBot">
+                            <div class="text-inside">. . .</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rank-block">
+                    <div class="list-rank__name">TOP SERIES</div>
+                    <div class="list-rank__nameBorder"></div>
+
+                    <div class="padding-add"></div>
+
+                    <div class="rank-item">
+                        <img src="./rank1-icon.svg" alt="rank1-icon" class="rank-icon">
+                        <div class="rank-item__block">
+                            <img src="./rank-item2.png" alt="" class="rank-item__image">
+                            <div class="rank-item__detail">
+                                <div class="rank-item__name">Revelation 2.0: The Lost Hero</div>
+                                <div class="onsale-item__listCate">
+                                    <div class="onsale-item__cate">Adventure</div>
+                                    <div class="onsale-item__cate">MMO RPG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item">
+                        <img src="./rank2-icon.svg" alt="rank2-icon" class="rank-icon">
+                        <div class="rank-item__block">
+                            <img src="./rank-item4.png" alt="" class="rank-item__image">
+                            <div class="rank-item__detail">
+                                <div class="rank-item__name">The Last Of Us - Season 3</div>
+                                <div class="onsale-item__listCate">
+                                    <div class="onsale-item__cate">Storytelling</div>
+                                    <div class="onsale-item__cate">MMO RPG</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="rank-item">
+                        <img src="./rank3-icon.svg" alt="rank3-icon" class="rank-icon">
+                        <div class="rank-item__block">
+                            <img src="./rank-item6.png" alt="" class="rank-item__image">
+                            <div class="rank-item__detail">
+                                <div class="rank-item__name">Story Time 3: Chess</div>
+                                <div class="onsale-item__listCate">
+                                    <div class="onsale-item__cate">Casual</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rank-item">
+                        <div class="rank-icon"></div>
+                        <div class="rank-item__blockBot">
+                            <div class="text-inside">. . .</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- body 5 -->
+    <div class="body5">
+        <div class="container">
+            <div class="partner">
+                SPONSORS AND PARTNERS
+            </div>
+            <div class="wrapper-list-box">
+                <div class="list-box-partner">
+                    <div class="box-partner">
+                        <img src="./partner1.svg" alt="">
+                    </div>
+                    <div class="box-partner">
+                        <img src="./partner2.svg" alt="">
+                    </div>
+                    <div class="box-partner">
+                        <img src="./partner3.svg" alt="">
+                    </div>
+                    <div class="box-partner">
+                        <img src="./partner4.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="padding-add__box"></div>
+
+                <div class="list-box-partner">
+                    <div class="box-partner__transparent"></div>
+                    <div class="box-partner">
+                        <img src="./partner5.svg" alt="">
+                    </div>
+                    <div class="box-partner">
+                        <img src="./partner6.svg" alt="">
+                    </div>
+                    <div class="box-partner__transparent"></div>
+                </div>
+
+                <div class="padding-add"></div>
+                <div class="padding-add__box"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+<footer>
+    <div class="footer-wrapper">
+        <div class="container">
+            <div class="list-footer__icon">
+                <img src="./logo-footer.png" alt="logo-footer">
+                <div class="list-social">
+                    <div class="follow-social">Watch us on Social:</div>
+                    <img src="./facebook-icon.svg" alt="facebook-icon" style="cursor: pointer;">
+                    <img src="./discord-icon.svg" alt="discord-icon" style="cursor: pointer;">
+                    <img src="./twitter-icon.svg" alt="twitter-icon" style="cursor: pointer;">
+                </div>
+            </div>
+
+            <div class="name-company">VIVIAN GAME STORE ENTERTAINMENT JOINT STOCK COMPANY</div>
+            <div class="info-company">Address: 100 Minh Khai Street, Hai Ba Trung District, Hanoi.</div>
+            <div class="info-company">Hotline: 1900110011</div>
+            <div class="info-company">Email: vivian.cskh@gmail.com</div>
+        </div>
+
+        <div class="border-bottom__footer"></div>
+        <div class="copyright-wrapper">
+            <div class="copyright">Copyright @2018</div>
+        </div>
+    </div>
+</footer>
+
+</html>

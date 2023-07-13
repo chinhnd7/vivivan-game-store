@@ -1,0 +1,544 @@
+/* reset */
+html {
+    line-height: 1.5;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: border-box;
+  }
+  input,
+  textarea,
+  select,
+  button {
+    outline: none;
+    font: inherit;
+  }
+  input {
+    line-height: normal;
+  }
+  label,
+  button {
+    cursor: pointer;
+    user-select: none !important;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration: none;
+  }
+  img,
+  picture,
+  video,
+  canvas,
+  svg {
+    display: block;
+    max-width: 100%;
+    user-select: none !important;
+  }
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* Mobie: width < 740px */
+  @media only screen and (max-width: 46.1875em) {
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select:focus,
+    textarea {
+      font-size: 16px;
+    }
+  }
+
+/* base */
+:root{
+    --background: #333;
+    --background-header: #E6D1F2;
+}
+
+@font-face {
+  font-family: "UTM-NguyenHa-02";
+  src: url("../fonts/UTM-NguyenHa-02.ttf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter.ttf");
+}
+
+@font-face {
+  font-family: "MYRIADPRO-REGULAR";
+  src: url("../fonts/MYRIADPRO-REGULAR.otf");
+}
+
+html, body {
+    font-family: "MYRIADPRO-REGULAR", sans-serif;
+    font-size: 15px;
+    background-color: var(--background);
+  }
+
+
+/* styles */
+.header{
+  height: 70px;
+  background-color: var(--background-header);
+}
+
+.wrapper{
+  max-width: 1200px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.nav {
+  display: flex;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: 37px;
+  gap: 54px;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-item {
+  color: #946DAE;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.icon-header {
+  display: flex;
+  gap: 40px;
+}
+
+.icon-user {
+  display: flex;
+  gap: 50px;
+}
+
+.icon-language {
+  width: 69px;
+  height: 33px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  background-color: #946DAE;
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1040px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+/* body1 */
+.body1 {
+}
+
+.search {
+  margin-top: 44px;
+  width: 306px;
+  height: 41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #170027;
+  padding-left: 24px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: var(--background-header);
+  border-radius: 20px;
+}
+
+.main-header {
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: #E6D1F2;
+}
+
+.list-star-icon {
+  margin-top: 10px;
+  display: flex;
+}
+
+.list-tag-game {
+  margin-top: 20px;
+  width: 620px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tag-header {
+  font-size: 15px;
+  font-weight: 400;
+  color: #E6D1F2;
+  cursor: pointer;
+}
+
+/* group */
+.list-group {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 88px;
+}
+
+.group1 {
+  width: 620px;
+}
+
+.list-genres {
+  margin-top: 50px;
+  display: flex;
+  gap: 150px;
+  justify-content: center;
+}
+
+.genre {
+  width: 156px;
+  height: 50px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #E6D1F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.genre-name {
+  font-weight: bold;
+}
+
+.block-description {
+  margin-top: 52px;
+  padding: 15px 20px 15px 20px;
+  border-radius: 5px;
+  border: 1px solid #E6D1F2;
+  color: #E6D1F2;
+  font-weight: 300;
+}
+
+.block-description span{
+  display: block;
+  cursor: pointer;
+}
+
+.header-secondary {
+  color: #E6D1F2;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.block-information {
+  padding: 15px 20px 15px 20px;
+  color: #E6D1F2;
+}
+
+.block-icon {
+  margin-top: 10px;
+  height: 65px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #E6D1F2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 58px;
+}
+
+.icon-social {
+  width: 28px;
+  height: 28px;
+}
+
+.icon-big-star {
+  width: 40px;
+  height: 40px;
+}
+
+/* group2 */
+.group2 {
+  width: 333px;
+}
+
+.promotion-text {
+  margin-top: 15px;
+  color: #E6D1F2;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.purchase-text {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid #000;
+  background: #946DAE;
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+  height: 50px;
+  padding: 7px 127px 10px 127px;
+  cursor: pointer;
+}
+
+.add-cart {
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #E6D1F2;
+  height: 36px;
+  color: #E6D1F2;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 7px 127px 2px 127px;
+  cursor: pointer;
+}
+
+.add-fav {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #E6D1F2;
+  height: 36px;
+  color: #E6D1F2;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 5px 50px 0px 50px;
+  cursor: pointer;
+}
+
+.block-infor {
+  margin-top: 15px;
+  border-radius: 5px;
+  border: 1px solid #E6D1F2;
+}
+
+.block-infor-item {
+  margin-top: 18px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.infor-text {
+  font-weight: 300;
+  color: white;
+}
+
+.detail-infor-text {
+  font-weight: 600;
+  color: white;
+}
+
+.border-bottom__inform {
+  border-bottom: 1px solid #E6D1F2;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.list-os {
+  display: flex;
+  gap: 10px;  
+}
+
+.window-icon {
+  width: 20px;
+  height: 22px;
+  padding: 3px 0px 5px 0px;
+}
+
+.macos-icon {
+  width: 22px;
+  height: 27px;
+  padding: 0px 0px 9px 0px;
+}
+
+.share-button {
+  margin-top: 16px;
+  display: flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  background: #E6D1F2;
+  height: 42px;
+  cursor: pointer;
+}
+
+.share {
+  color: #170027;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+/* old css for body 2*/
+.onsale {
+  padding-top: 58px;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  color: white;
+}
+
+.list-item-onsale {
+  display: flex;
+  color: white;
+  gap: 20px;
+  margin-top: 25px;
+}
+
+.onsale-item__name {
+  margin-top: 25px;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  color: #E6D1F2;
+}
+
+.onsale-item__detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:5px;
+}
+
+.onsale-item__listCate {
+  display: flex;
+  gap: 10px;
+  margin-top:5px;
+}
+
+.onsale-item__listPrice {
+  display: flex;
+  gap: 15px;
+  margin-top:10px;
+}
+
+.onsale-item__cate{
+  border-radius: 5px;
+  background: #E1CBEE;
+  padding: 4px 4px;
+  color: black;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  opacity: 0.5;
+}
+
+.onsale-item__price {
+  color: #E6D1F2;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.onsale-item__discount {
+  border-radius: 20px;
+  background: #946DAE;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 6px 11px;
+  color:white;
+}
+
+.arrow-group {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding-bottom: 125px;
+}
+
+/* footer */
+.footer-wrapper {
+  background-color: var(--background-header);
+}
+
+.list-footer__icon {
+  padding-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-social {
+  display: flex;
+  gap: 36px;
+}
+
+.follow-social {
+  font-size: 20px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.name-company {
+  margin-top: 23px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.border-bottom__footer {
+  margin-top: 45px;
+  border-bottom: 1px solid white;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+
+.copyright-wrapper {
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  color: #FFF;
+}
